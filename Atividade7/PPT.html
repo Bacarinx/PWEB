@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedra, Papel ou Tesoura</title>
+    <link rel="stylesheet" href="PPT.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Pedra, Papel ou Tesoura</h1>
+
+        <div class="botoes">
+            <button onclick="jogar('pedra')">Pedra</button>
+            <button onclick="jogar('papel')">Papel</button>
+            <button onclick="jogar('tesoura')">Tesoura</button>
+        </div>
+
+        <div class="resultado">
+            <p id="usuario">Você escolheu: -</p>
+            <p id="computador">Computador escolheu: -</p>
+            <h2 id="mensagem">Faça sua jogada!</h2>
+        </div>
+    </div>
+
+    <script src="PPT.js"></script>
+</body>
+</html>
