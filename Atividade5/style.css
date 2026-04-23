@@ -1,0 +1,176 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* DIV padrão */
+.box {
+    width: 500px;
+    height: 500px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+@media (max-width: 420px) {
+    .box {
+        background-color: gray;
+    }
+
+    .box h2::after {
+        content: "Cinza";
+    }
+
+    .box h2 {
+        visibility: hidden;
+        position: relative;
+    }
+
+    .box h2::after {
+        visibility: visible;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* 421px até 768px */
+@media (min-width: 421px) and (max-width: 768px) {
+    .box {
+        background-color: orange;
+    }
+
+    .box h2::after {
+        content: "Laranja";
+    }
+
+    .box h2 {
+        visibility: hidden;
+        position: relative;
+    }
+
+    .box h2::after {
+        visibility: visible;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* 769px até 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .box {
+        background-color: pink;
+    }
+
+    .box h2::after {
+        content: "Rosa";
+    }
+
+    .box h2 {
+        visibility: hidden;
+        position: relative;
+    }
+
+    .box h2::after {
+        visibility: visible;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1079px) {
+    .box {
+        background-color: red;
+    }
+
+    .box h2::after {
+        content: "Vermelho";
+    }
+
+    .box h2 {
+        visibility: hidden;
+        position: relative;
+    }
+
+    .box h2::after {
+        visibility: visible;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (min-width: 1080px) and (max-width: 1365px) {
+    .box {
+        background-color: purple;
+    }
+
+    .box h2::after {
+        content: "Roxo";
+    }
+
+    .box h2 {
+        visibility: hidden;
+        position: relative;
+    }
+
+    .box h2::after {
+        visibility: visible;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1920px) {
+    .box {
+        background-color: gold;
+    }
+
+    .box h2::after {
+        content: "Amarelo";
+    }
+
+    .box h2 {
+        visibility: hidden;
+        position: relative;
+    }
+
+    .box h2::after {
+        visibility: visible;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (min-width: 1921px) {
+    .box {
+        background-color: green;
+    }
+
+    .box h2::after {
+        content: "Verde";
+    }
+
+    .box h2 {
+        visibility: hidden;
+        position: relative;
+    }
+
+    .box h2::after {
+        visibility: visible;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
