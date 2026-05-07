@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de JavaScript - POO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Painel de Exercícios (POO)</h1>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>1. Calcular Área do Retângulo</h2>
+            <div class="form-group">
+                <label for="base">Base (x):</label>
+                <input type="number" id="base" placeholder="Ex: 10">
+            </div>
+            <div class="form-group">
+                <label for="altura">Altura (y):</label>
+                <input type="number" id="altura" placeholder="Ex: 5">
+            </div>
+            <button onclick="executarRetangulo()">Calcular Área</button>
+            <div class="resultado" id="res-retangulo">A área aparecerá aqui...</div>
+        </section>
+
+        <section class="card">
+            <h2>2. Cadastro de Contas</h2>
+            <div class="form-group">
+                <label for="correntista">Nome do Correntista:</label>
+                <input type="text" id="correntista" placeholder="Nome completo">
+            </div>
+            <div class="form-group">
+                <label for="banco">Banco:</label>
+                <input type="text" id="banco" placeholder="Nome do banco">
+            </div>
+            <div class="form-group">
+                <label for="numero">Número da Conta:</label>
+                <input type="text" id="numero" placeholder="00000-0">
+            </div>
+            <div class="form-group">
+                <label for="saldo">Saldo Inicial (R$):</label>
+                <input type="number" id="saldo" placeholder="0.00">
+            </div>
+
+            <hr>
+
+            <div class="botoes-especificos">
+                <button class="btn-corrente" onclick="criarContaCorrente()">Criar Conta Corrente</button>
+                <button class="btn-poupanca" onclick="criarContaPoupanca()">Criar Conta Poupança</button>
+            </div>
+
+            <div class="resultado" id="res-conta">Os dados da conta cadastrada aparecerão aqui...</div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
