@@ -30,6 +30,7 @@ janela.addEventListener('click', () => {
     btnReset.style.display = 'inline-block'; // Mostra o botão de consertar
 });
 
+
 // Função bônus para resetar o estado da janela
 function consertarJanela() {
     estaQuebrada = false;
