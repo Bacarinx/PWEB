@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== Cabeçalho ===== */
+header {
+    background-color: #0d6efd;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* ===== Container principal ===== */
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+/* ===== Seções ===== */
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    margin-bottom: 10px;
+    color: #0d6efd;
+    border-bottom: 2px solid #e6e6e6;
+    padding-bottom: 5px;
+}
+
+/* ===== Lista ===== */
+ul {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+/* ===== Código ===== */
+pre {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin-top: 10px;
+}
+
+/* ===== Rodapé ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* ===== Imagens ===== */
+.imagem-artigo {
+    display: block;
+    width: 100px;
+    max-width: 700px;
+    height: auto;
+    margin: 15px auto;
+    border-radius: 8px;
+}
+
+.legenda {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+

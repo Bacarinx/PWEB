@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacidade e Segurança</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Privacidade e Segurança
+        </h1>
+        <p class="subtitle">
+            Este pequeno artigo explicará sobre algumas tecnologias que podem ser usadas para autenticação.
+        </p>
+    </header>
+
+    <div class="container">
+
+        <!-- ===== Introdução ===== -->
+        <section>
+            <h2>Introdução</h2>
+            <p>
+                O tema de privacidade e segurança é uma das principais discussões quando falamos em qualidade de software. 
+                Quando um sistema apresenta vulnerabilidades, a confiança dos clientes e o valor da marca da empresa 
+                diminuem drasticamente. Atualmente, praticamente todos os sites e serviços exigem autenticação para 
+                identificar o usuário, seja para armazenar seus dados ou apenas para restringir o acesso ao sistema.
+            </p>
+            <p>
+                Entre as principais formas de autenticação utilizadas hoje, destacam-se o OAuth2 e o JWT (JSON Web Token). 
+                Essas tecnologias são utilizadas para garantir que apenas usuários autorizados consigam acessar determinadas 
+                partes de uma aplicação, aumentando a segurança e protegendo as informações do sistema.
+            </p>
+        </section>
+
+        <!-- ===== O que é? ===== -->
+        <section>
+            <h2>O que é?</h2>
+            <p>
+                Explique aqui o conceito principal do tema. Pode ser: banco de dados,
+                API, SQL Server, segurança, redes, etc.
+            </p>
+        </section>
+
+        <!-- ===== Como funciona ===== -->
+        <section>
+            <h2>Como funciona</h2>
+            <p>
+                O OAuth2 é um método de autorização que permite que o usuário utilize uma conta de um serviço terceiro, 
+                como Google ou outro sistema já existente, ao invés de criar uma nova conta. O funcionamento segue 
+                basicamente estas etapas:
+            </p>
+            <ul>
+                <li>O cliente solicita autorização ao servidor terceiro;</li>
+                <li>O servidor autentica o usuário;</li>
+                <li>O servidor gera um token de acesso e um token de atualização (refresh token);</li>
+                <li>O cliente utiliza esse token para permitir o acesso do usuário ao sistema.</li>
+            </ul>
+
+            <p>
+                Já o JWT funciona de forma diferente. Em vez de depender de um serviço terceiro, o próprio sistema gera um 
+                token que contém as informações do usuário. Sempre que o usuário tenta acessar alguma parte da aplicação, 
+                esse token precisa ser enviado para validar o acesso.
+            </p>
+
+            <p>
+                O token JWT é dividido em três partes principais:
+            </p>
+
+            <ul>
+                <li><b>Header:</b> contém o tipo de token e o algoritmo de autenticação utilizado.</li>
+                <li><b>Payload:</b> contém as informações do usuário e a data de expiração do token.</li>
+                <li><b>Signature:</b> contém a assinatura criptografada que garante a segurança dos dados.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Exemplo de código</h2>
+            <p>Abaixo está um exemplo simples de validação de token JWT em uma aplicação:</p>
+
+            <pre>
+// Exemplo em C#
+
+var token = Request.Headers["Authorization"];
+
+if (token != null)
+{
+    Console.WriteLine("Usuário autenticado com sucesso");
+}
+else
+{
+    Console.WriteLine("Acesso negado");
+}
+            </pre>
+
+            <p>
+                Neste exemplo, o sistema verifica se o usuário enviou um token de autorização. Caso o token exista,
+                o acesso é permitido. Caso contrário, o usuário não pode acessar o sistema.
+            </p>
+        </section>
+    </footer>
+</body>
+</html>
